@@ -7,7 +7,7 @@
 
 @git status
 
-@SET /P ANSWER="実行します。よろしいですか (Y/N)？"
+@SET /P ANSWER="���s���܂��B��낵���ł��� (Y/N)�H"
 
 @if /i {%ANSWER%}=={y} (goto :yes)
 @if /i {%ANSWER%}=={yes} (goto :yes)
@@ -17,7 +17,7 @@
 
 @:yes
 
-@set /p star="コメントを入力してください"
+@set /p star="�R�����g����͂��Ă�������"
 
 @git commit -m %star%
 
@@ -26,5 +26,8 @@
 @git remote add origin git@github.com:sskcom/test.git
 
 
+
 @git push -u origin develop
 @set /p star="本当にokですか"
+
+
